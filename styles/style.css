@@ -1,18 +1,33 @@
+:root {
+    --header-cards: #fff;
+    --sidebar: #1992D4;
+    --main: #E2E8F0;
+    --accent: #F0B429;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
+/* HEADER */
+
 header {
-    background-color: #fff;
+    background-color: var(--header-cards);
     grid-column: 2 / 3;
 }
 
+/* SIDEBAR */
+
 aside {
-    background-color: blue;
+    background-color: var(--sidebar);
+    color: #fff;
+    fill: #fff;
     grid-row: 1 / 3;
 }
 
+/* MAIN */
+
 main {
-    background-color: gray;
+    background-color: var(--main);
 }
