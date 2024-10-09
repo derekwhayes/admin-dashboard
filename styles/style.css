@@ -40,6 +40,8 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr, 2fr;
     padding-top: 1rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.362);
+    z-index: 0;
 }
 
 header > div {
@@ -161,13 +163,42 @@ button {
     border: none;
     width: 100px;
     padding: 0.5rem;
-    border-radius: 50px;
-    
-    
+    border-radius: 50px;   
+}
+
+button:hover {
+    color: var(--accent);
+    fill: var(--accent);
+    cursor: pointer;
 }
 
 /* MAIN */
 
 main {
     background-color: var(--main);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main > div {
+    background-color: #fff;
+    border: 1px solid red;
+}
+
+.project-cards {
+    grid-row: 1 / 3;
+}
+
+.project-cards > h3 {
+    margin: 0;
+}
+
+.announcements > h3 {
+    margin: 0;
+}
+
+.trending > h3 {
+    margin: 0;
 }
