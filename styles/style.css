@@ -24,6 +24,7 @@ body {
     grid-template-rows: 1fr 5fr;
     font-family: montserrat;
     font-size: 16px;
+    margin: 0;
 }
 
 svg {
