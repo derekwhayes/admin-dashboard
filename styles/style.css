@@ -1,3 +1,9 @@
+@font-face {
+    font-family: montserrat;
+    src: local(Montserrat-Regular);
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
 :root {
     --header-cards: #fff;
     --sidebar: #1992D4;
@@ -8,6 +14,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    font-family: montserrat;
 }
 
 /* HEADER */
