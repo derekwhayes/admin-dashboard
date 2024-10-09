@@ -34,7 +34,70 @@ svg {
 
 header {
     background-color: var(--header-cards);
+    font-family: montserrat-bold;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr, 2fr;
+    padding-top: 1rem;
+}
+
+header > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search > svg {
+    cursor: pointer;
+}
+
+input {
+    width: 80%;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--main);
+    padding: 0 1rem;
+    font-family: montserrat;
+}
+
+input:focus {
+    box-shadow: 0 0 5px 3px var(--accent);
+}
+
+.account-info > svg {
+    width: 30px;
+    cursor: pointer;
+}
+
+.account-info > img {
+    width: 60px;
+    cursor: pointer;
+}
+
+.account-info > h3 {
+    cursor: pointer;
+}
+
+.greeting {
+    justify-self: start;
+    padding: 1rem 6rem;
+}
+
+.greeting > img {
+    width: 100px;
+}
+
+.greeting-text > p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.greeting-text > h3 {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 /* SIDEBAR */
@@ -85,9 +148,26 @@ aside > div > div:hover {
     width: 75px;
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-items: center;
+    padding-right: 1rem;
+}
+
+button {
+    background-color: var(--sidebar);
+    color: #fff;
+    border: none;
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: 50px;
+    
+    
+}
+
 /* MAIN */
 
 main {
     background-color: var(--main);
-
 }
