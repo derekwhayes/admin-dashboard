@@ -227,6 +227,12 @@ main > h3 {
     fill: rgba(0, 0, 0, 0.603);
 }
 
+.card-icons > svg:hover {
+    color: var(--accent);
+    fill: var(--accent);
+    cursor: pointer;
+}
+
 .announcements {
     background-color: #fff;
     padding: 1rem;
