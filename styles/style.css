@@ -212,7 +212,6 @@ main > h3 {
 }
 
 .card-text {
-    /* width: 350px; */
     padding: 0 2rem;
 }
 
@@ -232,13 +231,26 @@ main > h3 {
     fill: rgba(0, 0, 0, 0.603);
 }
 
-.card-icons > svg {
+.announcements {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.362);
+    padding: 2rem;
+    display: grid;
 }
 
-.announcements > h3 {
-    margin: 0;
+.announcement > h5 {
+    font-family: montserrat-bold;
+    font-size: .9rem;
 }
 
-.trending > h3 {
-    margin: 0;
+.announcement > p {
+    font-size: .75rem;
 }
+
+hr {
+    width: 100%;
+    border-color: #99999942;
+}
+
