@@ -178,21 +178,61 @@ main {
     background-color: var(--main);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    grid-template-rows: 30px 6fr .5fr 6fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 main > div {
-    background-color: #fff;
     border: 1px solid red;
 }
 
-.project-cards {
-    grid-row: 1 / 3;
+main > h3 {
+    font-family: montserrat-bold;
 }
 
-.project-cards > h3 {
-    margin: 0;
+.project-title {
+    margin-top: 20px;
+}
+
+.project-cards {
+    grid-row: 2 / 5;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cards {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.362), 8px 0 inset var(--accent);
+    padding: 2rem;
+    display: grid;
+}
+
+.card-text {
+    /* width: 350px; */
+    padding: 0 2rem;
+}
+
+.card-text > h4 {
+    font-family: montserrat-bold;
+}
+
+.card-text > p {
+    font-size: .9rem;
+}
+
+.card-icons {
+    justify-self: flex-end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    fill: rgba(0, 0, 0, 0.603);
+}
+
+.card-icons > svg {
 }
 
 .announcements > h3 {
