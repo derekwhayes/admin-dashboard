@@ -178,7 +178,7 @@ main {
     background-color: var(--main);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 30px 6fr 30px 6fr;
+    grid-template-rows: 30px 1fr 30px 1fr;
     gap: 20px;
     padding: 20px;
 }
